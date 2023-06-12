@@ -1,0 +1,848 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Cantarell&family=Dancing+Script:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.carousel-container {
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+.carousel-container .banner-text {
+  position: absolute;
+  z-index: 120;
+  top: 20%;
+  color: #fff;
+  padding-left: 30%;
+}
+.carousel-container .banner-text .fst-btn {
+  width: 200px;
+  height: 40px;
+  background: rgb(221, 36, 107);
+  color: #fff;
+  border: none;
+  outline: none;
+}
+.carousel-container .banner-text .fst-btn:hover {
+  background-color: rgb(247, 96, 154);
+  color: rgb(107, 1, 42);
+}
+.carousel-container .banner-text .b-tx-1 {
+  color: rgb(250, 147, 198);
+  font-size: 38px;
+  font-weight: 400;
+  font-family: "Dancing Script", cursive;
+}
+.carousel-container .banner-text .b-tx-2 {
+  font-size: 160px;
+  font-family: "Abel", sans-serif;
+  font-weight: 900;
+  margin-top: -63px;
+  height: 173px;
+}
+.carousel-container .banner-text .b-tx-3 {
+  font-size: 20px;
+  font-family: "Cantarell", sans-serif;
+}
+.carousel-container .navbar {
+  position: fixed;
+  z-index: 1000;
+  padding-right: 3%;
+}
+.carousel-container .navbar .nav-link {
+  font-size: 13px;
+}
+.carousel-container .navbar .nav-link:first-child {
+  color: rgb(185, 6, 111);
+}
+.carousel-container .navbar .logo-1 {
+  color: rgb(185, 6, 111);
+}
+.carousel-container .navbar .navbar-brand {
+  color: #fff;
+}
+.carousel-container .navbar .search-box {
+  display: none;
+  width: 75%;
+  height: 30px;
+}
+.carousel-container .navbar .navbar-nav {
+  padding-left: 10%;
+}
+.carousel-container #prevBtn {
+  position: absolute;
+  z-index: 4;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  background-color: rgb(252, 131, 226);
+  border: none;
+  outline: none;
+  color: #fff;
+  left: 8%;
+}
+.carousel-container #prevBtn p {
+  text-align: center;
+  font-weight: 700;
+}
+.carousel-container #nextBtn {
+  position: absolute;
+  z-index: 4;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  background-color: rgb(252, 131, 226);
+  border: none;
+  outline: none;
+  color: #fff;
+  right: 8%;
+}
+.carousel-container #nextBtn p {
+  text-align: center;
+  font-weight: 700;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 500%;
+  height: 100%;
+}
+
+.img-1 {
+  width: 20%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img-1.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.img-2 {
+  width: 20%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img-2.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.img-3 {
+  width: 20%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img-3.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.img-4 {
+  width: 20%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img-4.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.img-5 {
+  width: 20%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img-5.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease-in-out;
+}
+
+/* .carousel-slide img {
+  width: 20%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+} */
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-buttons button {
+  margin: 0 5px;
+  padding: 5px 10px;
+}
+
+/* Skew css */
+.skew-1 {
+  width: 57%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(32, 31, 31) 40%, rgb(50, 50, 50) 57%, rgb(56, 56, 56) 76%, rgba(4, 4, 4, 0.9780287115) 100%);
+  -webkit-clip-path: polygon(0 0, 66% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 66% 0, 100% 100%, 0% 100%);
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+}
+
+.skew-1 .pink-skew {
+  width: 50%;
+  height: 100%;
+  background: rgb(51, 1, 35);
+  background: linear-gradient(180deg, rgb(51, 1, 35) 0%, rgb(193, 22, 134) 60%, rgba(209, 21, 168, 0.137) 100%);
+  transform-origin: top left;
+  transform: skew(30deg, 0);
+  position: absolute;
+  z-index: 3;
+  right: -8px;
+}
+.skew-1 .gray-skew {
+  width: 40%;
+  height: 90%;
+  background: rgb(22, 22, 22);
+  background: linear-gradient(180deg, rgb(22, 22, 22) 0%, rgb(75, 75, 75) 42%, rgb(113, 113, 113) 60%, rgba(24, 24, 24, 0.9780287115) 100%);
+  transform-origin: top left;
+  transform: skew(30deg, 0);
+  position: absolute;
+  z-index: 3;
+  left: -38px;
+  bottom: 0;
+}
+
+.blue-shoe-1 {
+  width: 340px;
+  z-index: 10;
+  height: 200px;
+  position: absolute;
+  margin-top: -94px;
+  background-color: #fff;
+}
+.blue-shoe-1 .blue-shoe1-img {
+  width: 89%;
+  height: 150px;
+}
+
+.banner-2Fx .prc {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4e4e4e;
+}
+.banner-2Fx .prc span {
+  color: rgb(214, 10, 129);
+  font-size: 34px;
+}
+
+.banner2Tx-1 {
+  padding-top: 37%;
+  font-size: 24px;
+  font-weight: 600;
+  font-variant: 2px;
+}
+.banner2Tx-1 span {
+  color: rgb(212, 15, 130);
+}
+
+.add-cart-btn {
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  background: #664040;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.detail-cart-btn {
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  background: #030303;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.button-tow {
+  gap: 10px;
+}
+
+.men-fst {
+  width: 400px;
+}
+
+.banner2Tx-2 {
+  position: relative;
+}
+.banner2Tx-2 .menBgBr {
+  position: absolute;
+  height: 400px;
+  z-index: -1;
+  top: 0;
+}
+.banner2Tx-2 .menBgBr p {
+  font-size: 80px;
+  color: #030303;
+  font-weight: bolder;
+  position: absolute;
+  bottom: -40px;
+  left: -64px;
+  padding: 0;
+}
+
+.banner-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.589)), url("img/fashion-face.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: right;
+}
+.banner-3 h5 {
+  font-size: 26px;
+}
+.banner-3 .banner-3-fx1 {
+  width: 305%;
+}
+.banner-3 button {
+  background-color: transparent;
+  border: 2px solid rgb(212, 15, 130);
+  width: 150px;
+  height: 40px;
+  color: #fff;
+}
+.banner-3 button:hover {
+  background-color: rgb(212, 15, 130);
+  border: none;
+  outline: none;
+}
+.banner-3 .about-tx1 {
+  color: rgb(212, 15, 130);
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.banner-4 {
+  background-image: url(img/banner-4Bg.png);
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.banner-4 .flex-cl-1 {
+  width: 26%;
+}
+.banner-4 .jwelary-img {
+  color: #fff;
+  text-align: start;
+  width: 100%;
+  height: 300px;
+  background-image: url(img/jwelary-img.jpg);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.banner-4 .jwelary-img h1 {
+  margin-top: 80%;
+  color: #fff;
+}
+.banner-4 .jwelary-img-2 {
+  color: #fff;
+  text-align: start;
+  width: 100%;
+  height: 100px;
+  background-image: url(img/furniture-1.jpg);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.banner-4 .jwelary-img-2 h1 {
+  color: #fff;
+}
+.banner-4 .jwelary-img3 {
+  background-image: url(img/man.jpg);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  width: 100%;
+  height: 100px;
+}
+.banner-4 .jwelary-img3 h1 {
+  font-size: 30px;
+}
+
+.flex-col-2 {
+  width: 30%;
+  color: #fff;
+  gap: 10px;
+}
+
+.jwelary-img4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.589)), url("img/fashionIMg-1.jpg");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  height: 280px;
+  width: 48%;
+}
+.jwelary-img4 h1 {
+  padding-top: 80%;
+  font-size: 30px;
+}
+
+.jwelary-img5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.589)), url("img/Hair-styling-tools.jpg");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  height: 280px;
+  width: 48%;
+}
+.jwelary-img5 h1 {
+  padding-top: 80%;
+  font-size: 30px;
+}
+
+.banner-4-dec {
+  gap: 15px;
+}
+
+.flex-3 {
+  gap: 10px;
+}
+
+@media (max-width: 950px) {
+  .banner-2 .banner2Tx-1 {
+    padding-top: 60%;
+  }
+  .carousel-slide {
+    width: 700%;
+  }
+  .carousel-slide .img-1 {
+    width: 30%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img-1.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease-in-out;
+  }
+  .carousel-slide .img-2 {
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img-2.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease-in-out;
+  }
+  .carousel-slide .img-3 {
+    width: 60%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img-3.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease-in-out;
+  }
+  .carousel-slide .img-4 {
+    width: 40%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img-4.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease-in-out;
+  }
+  .carousel-slide .img-5 {
+    width: 40%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img-5.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease-in-out;
+  }
+}
+.card_flex1 {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.card_flex1 .card_1 {
+  width: 200px;
+  height: auto;
+  background-color: rgba(161, 161, 161, 0.5411764706);
+}
+.card_flex1 .card_1 .item_img {
+  width: 100%;
+  height: 200px;
+  background-image: url(img/fashion-5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.card_flex1 .card_1 .item_text {
+  background-color: #fff;
+}
+.card_flex1 .card_1 p:first-child {
+  font-weight: 600;
+}
+.card_flex1 .card_1 span {
+  color: rgb(212, 15, 130);
+  font-weight: 600;
+}
+.card_flex1 .card_1 button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(212, 15, 130);
+  font-size: 13px;
+}
+.card_flex1 .card_2 {
+  width: 200px;
+  height: auto;
+  background-color: rgba(161, 161, 161, 0.5411764706);
+}
+.card_flex1 .card_2 .item_img {
+  width: 100%;
+  height: 200px;
+  background-image: url(img/fashion-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.card_flex1 .card_2 .item_text {
+  background-color: #fff;
+}
+.card_flex1 .card_2 p:first-child {
+  font-weight: 600;
+}
+.card_flex1 .card_2 span {
+  color: rgb(212, 15, 130);
+  font-weight: 600;
+}
+.card_flex1 .card_2 button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(212, 15, 130);
+  font-size: 13px;
+}
+.card_flex1 .card_3 {
+  width: 200px;
+  height: auto;
+  background-color: rgba(161, 161, 161, 0.5411764706);
+}
+.card_flex1 .card_3 .item_img {
+  width: 100%;
+  height: 200px;
+  background-image: url(img/fashion-3.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.card_flex1 .card_3 .item_text {
+  background-color: #fff;
+}
+.card_flex1 .card_3 p:first-child {
+  font-weight: 600;
+}
+.card_flex1 .card_3 span {
+  color: rgb(212, 15, 130);
+  font-weight: 600;
+}
+.card_flex1 .card_3 button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(212, 15, 130);
+  font-size: 13px;
+}
+.card_flex1 .card_4 {
+  width: 200px;
+  height: auto;
+  background-color: rgba(161, 161, 161, 0.5411764706);
+}
+.card_flex1 .card_4 .item_img {
+  width: 100%;
+  height: 200px;
+  background-image: url(img/fashion-4.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.card_flex1 .card_4 .item_text {
+  background-color: #fff;
+}
+.card_flex1 .card_4 p:first-child {
+  font-weight: 600;
+}
+.card_flex1 .card_4 span {
+  color: rgb(212, 15, 130);
+  font-weight: 600;
+}
+.card_flex1 .card_4 button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(212, 15, 130);
+  font-size: 13px;
+}
+
+.banner5_cont {
+  gap: 20px;
+}
+
+.banner5_btn {
+  background-color: rgb(212, 15, 130);
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.banner5 h2 {
+  color: rgb(212, 15, 130);
+}
+.banner5 h5 {
+  padding-bottom: 30px;
+}
+
+.card_flex2 {
+  gap: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+}
+.card_flex2 .card_5 {
+  width: 200px;
+  height: auto;
+  background-color: rgba(161, 161, 161, 0.5411764706);
+}
+.card_flex2 .card_5 .item_img {
+  width: 100%;
+  height: 200px;
+  background-image: url(img/fashion-7.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.card_flex2 .card_5 .item_text {
+  background-color: #fff;
+}
+.card_flex2 .card_5 p:first-child {
+  font-weight: 600;
+}
+.card_flex2 .card_5 span {
+  color: rgb(212, 15, 130);
+  font-weight: 600;
+}
+.card_flex2 .card_5 button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(212, 15, 130);
+  font-size: 13px;
+}
+.card_flex2 .card_6 {
+  width: 200px;
+  height: auto;
+  background-color: rgba(161, 161, 161, 0.5411764706);
+}
+.card_flex2 .card_6 .item_img {
+  width: 100%;
+  height: 200px;
+  background-image: url(img/fashion-6.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.card_flex2 .card_6 .item_text {
+  background-color: #fff;
+}
+.card_flex2 .card_6 p:first-child {
+  font-weight: 600;
+}
+.card_flex2 .card_6 span {
+  color: rgb(212, 15, 130);
+  font-weight: 600;
+}
+.card_flex2 .card_6 button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(212, 15, 130);
+  font-size: 13px;
+}
+.card_flex2 .card_7 {
+  width: 200px;
+  height: auto;
+  background-color: rgba(161, 161, 161, 0.5411764706);
+}
+.card_flex2 .card_7 .item_img {
+  width: 100%;
+  height: 200px;
+  background-image: url(img/fashion-8.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.card_flex2 .card_7 .item_text {
+  background-color: #fff;
+}
+.card_flex2 .card_7 p:first-child {
+  font-weight: 600;
+}
+.card_flex2 .card_7 span {
+  color: rgb(212, 15, 130);
+  font-weight: 600;
+}
+.card_flex2 .card_7 button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(212, 15, 130);
+  font-size: 13px;
+}
+.card_flex2 .card_8 {
+  width: 200px;
+  height: auto;
+  background-color: rgba(161, 161, 161, 0.5411764706);
+}
+.card_flex2 .card_8 .item_img {
+  width: 100%;
+  height: 200px;
+  background-image: url(img/fashion-9.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.card_flex2 .card_8 .item_text {
+  background-color: #fff;
+}
+.card_flex2 .card_8 p:first-child {
+  font-weight: 600;
+}
+.card_flex2 .card_8 span {
+  color: rgb(212, 15, 130);
+  font-weight: 600;
+}
+.card_flex2 .card_8 button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(212, 15, 130);
+  font-size: 13px;
+}
+
+.banner-6 {
+  overflow: hidden;
+  height: auto;
+  background-color: #030303;
+}
+.banner-6 .banner6_text {
+  width: 30%;
+}
+.banner-6 .fashion10_img {
+  width: 30%;
+  height: 100%;
+}
+.banner-6 h2 {
+  color: #fff;
+}
+.banner-6 p {
+  font-size: 12px;
+  color: #fff;
+}
+.banner-6 button {
+  background-color: yellow;
+  color: #030303;
+  border: none;
+  outline: none;
+  width: 120px;
+  height: 40px;
+}
+
+.banner7 {
+  background-color: #030303;
+  height: auto;
+  color: #fff;
+  border-bottom: 3px solid #fff;
+  border-top: 3px solid #fff;
+}
+.banner7 h2 {
+  color: rgb(212, 15, 130);
+}
+.banner7 input {
+  border: none;
+  outline: none;
+  height: 34px;
+}
+.banner7 .submit {
+  width: 130px;
+  height: 34px;
+  background-color: rgba(212, 15, 130, 0.514);
+  color: #fff;
+}
+
+/* FOOTER */
+.banner_8 {
+  height: Auto;
+  background-image: linear-gradient(rgba(235, 30, 143, 0.37), rgba(243, 0, 122, 0.521)), url("img/footer_bg.png");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.banner_8 .footMn1 {
+  color: #fff;
+}
+.banner_8 .footMn1 h1 {
+  color: rgb(252, 3, 210);
+}
+.banner_8 .menu_1 {
+  margin-top: -110px;
+}
+.banner_8 .menu_3 {
+  margin-top: -120px;
+}
+.banner_8 .menu_4 {
+  margin-top: -120px;
+}
+.banner_8 .menu_5 {
+  margin-top: -255px;
+}
+.banner_8 .footer {
+  height: auto;
+  background-color: rgba(3, 3, 3, 0.7137254902);
+  color: #fff;
+}
+.banner_8 .footer span {
+  color: rgb(252, 3, 210);
+}
+.banner_8 .footer img {
+  width: 37px;
+  height: 20px;
+}
+.banner_8 .footer .gap_footer {
+  width: 40%;
+}
+.banner_8 .footer a {
+  text-decoration: none;
+}
+
+@media (max-width: 920px) {
+  .card_flex1 {
+    flex-direction: column;
+  }
+  .card_flex2 {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

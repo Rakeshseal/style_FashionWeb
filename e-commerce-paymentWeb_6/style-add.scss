@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-up{
+    background-color: rgb(241, 48, 154);
+    .nav-link{
+        color: #fff;
+    }
+}
+.cont-3{
+    background-color: #e0e0e0;
+}
+.order-img-1{
+    width: 400px;
+}
+.mrp-p span{
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(226, 33, 139);
+}
+.available{
+    font-weight: 400;
+    color: rgb(4, 182, 4);
+}
+.add-btn{
+    width: 140px;
+    height: 40px;
+    border-radius: 0;
+    text-align: center;
+    color: #fff;
+    background-color:rgb(226, 33, 139) ;
+    border: none;
+    outline: none;
+}
+.add-btn:hover{
+    background-color:rgb(136, 7, 78) ;
+}
+.size{
+    color: #525252;
+  .active{
+    font-weight: 700;
+  }
+  
+}
+.cash-btn{
+    width: 140px;
+    height: 40px;
+    border-radius: 0;
+    text-align: center;
+    color: rgb(226, 33, 139);
+    background-color:transparent ;
+    border: 2px solid rgb(226, 33, 139);
+    
+    
+}
+.cash-btn:hover{
+    background-color:rgb(226, 33, 139) ;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+//Quantity Add Style
+.quantity{
+    button{
+        width: 20px;
+        height: 30px;
+    }
+
+    .qttBox {
+        width: 30px;
+        height: 30px;
+        
+    }
+    
+     #inc{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        border: none;
+        outline: none;
+        color: #444444;
+     }
+}
+
+
+//Product Description
+
+
+.product-head {
+    font-size: 21px;
+    font-weight: 600;
+    color: #525252;
+}
+.product-btns{
+    .nav-link{
+        color: #525252;
+    }
+    
+   
+}
+
+.product-ul{
+    border-bottom:0.01em solid #868686 ;
+}
+.readMore-cont {
+    img{
+        margin:-3px 3px 0px
+    }
+    button{
+        border: none;
+        outline:none;
+        background: transparent;
+        h6{
+            color:rgb(226, 33, 139) ;
+        }
+    }
+}
+.more-p{
+    display: none;
+}
+
+
+/*** Footer ***/
+// .footer .btn.btn-social {
+//     margin-right: 5px;
+//     width: 35px;
+//     height: 35px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     color: var(--light);
+//     border: 1px solid #FFFFFF;
+//     border-radius: 35px;
+//     transition: .3s;
+// }
+
+// .footer .btn.btn-social:hover {
+//     color: var(--primary);
+// }
+
+// .footer .btn.btn-link {
+//     display: block;
+//     margin-bottom: 5px;
+//     padding: 0;
+//     text-align: left;
+//     color: #FFFFFF;
+//     font-size: 15px;
+//     font-weight: normal;
+//     text-transform: capitalize;
+//     transition: .3s;
+// }
+
+// .footer .btn.btn-link::before {
+//     position: relative;
+//     content: "\f105";
+//     font-family: "Font Awesome 5 Free";
+//     font-weight: 900;
+//     margin-right: 10px;
+// }
+
+// .footer .btn.btn-link:hover {
+//     letter-spacing: 1px;
+//     box-shadow: none;
+// }
+
+// .footer .copyright {
+//     padding: 25px 0;
+//     font-size: 15px;
+//     border-top: 1px solid rgba(256, 256, 256, .1);
+// }
+
+// .footer .copyright a {
+//     color: var(--light);
+// }
+
+// .footer .footer-menu a {
+//     margin-right: 15px;
+//     padding-right: 15px;
+//     border-right: 1px solid rgba(255, 255, 255, .1);
+// }
+
+// .footer .footer-menu a:last-child {
+//     margin-right: 0;
+//     padding-right: 0;
+//     border-right: none;
+// }
+
+
+
+.banner_8{
+    height: Auto;
+    background-image: linear-gradient(rgba(235, 30, 143, 0.37), rgba(243, 0, 122, 0.521)), url("img/footer_bg.png");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    
+     
+    .footMn1{
+      h1{
+        color:rgb(252, 3, 210) ;
+      }
+      color: #fff;
+    }
+    
+
+    .menu_1{
+      margin-top: -110px;
+    }
+    .menu_3{
+      margin-top: -120px;
+    }
+    .menu_4{
+      margin-top: -120px;
+    }
+    .menu_5{
+      margin-top: -255px;
+    }
+
+    .footer{
+      height: auto;
+      background-color: #030303b6;
+      color: #fff;
+      span{
+        color:rgb(252, 3, 210) ;
+      }
+      img{
+        width: 37px;
+        height: 20px;
+      }
+      .gap_footer{
+        width: 40%;
+      }
+      a{
+        text-decoration: none;
+      }
+
+    }
+  }
+

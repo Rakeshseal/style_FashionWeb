@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>E-commerce-Shop-1</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+ <!--FontAwesom Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Nav-Bar-->
+
+    
+
+    <div class="container-fluid carousel-container overflow-hidden gx-0 ">
+      
+
+      
+      <div class="container   w-75 ">
+        <!--Nav-bar-->
+      <nav class="navbar navbar-expand-lg bg-dark w-75 ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><span class="logo-1" style="font-weight: 700;">Our</span>LifeShop</a>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#" style="font-weight: 700;">Home</a>
+              </li>
+              <li class="nav-item text-light">
+                <a class="nav-link text-light" href="#">SHOP NOW</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  BUNDLE DEALS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item text-light">
+                <a class="nav-link text-light" href="#">LOOKBOOK</a>
+              </li>
+              <li class="nav-item text-light">
+                <a class="nav-link text-light" href="#">WHOLESALE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled text-light">REVIEWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled text-light">CONTACT</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control search-box me-2" type="search" placeholder="Search" aria-label="Search">
+              <a href="#">
+                <img class="search-icon"
+              onclick="searchFunc()" ondblclick="searchDvFunc()" src="img/search-(2).png" style="width: 20px; height:20px; margin-top:10px;">
+              </a>
+              <a href="#">
+                <img class="mx-3" src="img/shopping-cart.png" style="width: 18px; margin-top:10px;">
+              </a>
+            </form>
+            
+          </div>
+        </div>
+      </nav>
+      </div>
+       
+      
+
+      
+
+      <!--Banner-->
+      <div class="skew-1">
+        
+         <div class="gray-skew">
+            
+         </div>
+         <div class="pink-skew"></div>
+      </div>
+        <div class="carousel-slide">
+          <div class="img img-1"></div>
+          <div class="img img-2"></div>
+          <div class="img img-3"></div>
+          <div class="img img-4"></div>
+          <div class="img img-5"></div>
+        </div>
+        <!--Banner_Text-->
+      <div class="banner-text d-flex flex-column">
+        <p class="b-tx-1">Be different</p>
+        <p class="b-tx-2">STYLE</p>
+        <p class="b-tx-3">THE HAIR SOLUTION</p>
+        <button type="button" class="fst-btn">SHOP NOW</button>
+      </div>
+
+        <div class="carousel-buttons">
+          <button id="prevBtn" class="d-flex align-items-center justify-content-center"><img src="img/chevron-left.png" style="width: 20px;"></button>
+          <button id="nextBtn" class="d-flex align-items-center justify-content-center" ><img src="img/chevron-right-(1).png" style="width: 20px;"></button>
+        </div>
+        
+      </div>
+
+      <!--Banner-2-->
+      <div class="container-fluid banner-2 py-5">
+        <div class="conatiner d-flex
+        align-items-center justify-content-center">
+           <div class="banner-2Fx">
+            <div class=" blue-shoe-1 d-flex align-items-center justify-content-center">
+               <img class="blue-shoe1-img" src="img/blue-shoe-1.jpg">
+            </div>
+            <p class="banner2Tx-1"><span>100%</span> RECYCLED <br>PACKAGING & ETHICALLY<br>SOURCED MATERIALS</p>
+            <p>Featuring a lace-up front, breathable lining and soft insole for<br>optimal fit, you'll have the support needed to look and feel<br>good in your custom designed Athletic Shoe.</p>
+            <p class="prc">Price: <span>$45.44</span></p>
+             <div class="d-flex flex-wrap aline-items-center button-tow py-2">
+                <button class="add-cart-btn">ADD TO CART</button>
+                <button class="detail-cart-btn">DETAILS</button>
+             </div>
+             
+           </div>
+           
+           <div class="banner2Tx-2 px-2 ">
+            <img class="men-fst" src="img/men-img.png">
+            <div class="container w-75 menBgBr border border-dark border-3 m-auto">
+              <p>Men</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--banner-3-->
+      <div class="container-fluid banner-3 h-auto ">
+           <div class="container d-flex align-items-center justify-content-center py-5">
+             <div class="banner-3-fx1"></div>
+             <div class="banner-3Text">
+              <h2 class="about-tx1">About Us</h2>
+              <h5>LOVE IS IN THE HAIR</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit blanditiis aperiam, nisi eaque at aspernatur! Dolores voluptates soluta consequuntur perspiciatis numquam est, eos error deserunt sit reprehenderit ullam, aperiam repellendus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit blanditiis aperiam, nisi eaque at aspernatur! Dolores voluptates soluta consequuntur perspiciatis numquam est, eos error deserunt sit reprehenderit ullam, aperiam repellendus.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                <br><br> Suscipit blanditiis aperiam, nisi eaque at aspernatur! Dolores voluptates soluta consequuntur perspiciatis numquam est, eos error deserunt sit reprehenderit ullam, aperiam repellendus.</p>
+              <button type="button" class="about-btn ">READ MORE</button>
+             </div>
+           </div>
+      </div>
+
+      <!--banner-4-->
+
+      <div class="container-fluid banner-4">
+        <div class="container banner-4-dec d-flex align-items-center justify-content-center  py-5">
+           <div class="flex-cl-1 d-flex flex-column py-2">
+            <div class="jwelary-img px-5 my-3">
+               <h1>DIVINE</h1>
+               <h3>TEMPLE</h3>
+            </div>
+
+            <div class="jwelary-img-2 px-5 py-2 my-1">
+              <h1>FUTURE</h1>
+              <h6>BE ANOTHER YOU</h6>
+           </div>
+             
+           </div>
+           <div class="flex-col-2 d-flex flex-column ">
+             <div class="jwelary-img3 py-3">
+              <h1 class="
+              px-5">MEN</h1>
+              <h6 class="
+              px-5">EURAISAN FASHION</h6>
+             </div>
+             <div class="flex-3 d-flex">
+              <div class="jwelary-img4 py-5">
+                <h1 class="
+                 px-5">FASHION</h1>
+                 <h6 class="
+                 px-5">LOREM</h6>
+               </div>
+               <div class="jwelary-img5 py-5">
+                <h1 class="
+                 px-5">HAIR</h1>
+                 <h6 class="
+                 px-5">ACCESSORIES</h6>
+               </div>
+             </div>
+           </div>
+            
+        </div>
+      </div>
+
+      <!--banner-5-->
+      <div class="container-fluid banner5">
+        <div class="container banner5_cont d-flex flex-column  align-items-center py-5">
+          <h2>Our Products</h2>
+          <h5>TOP SELLERS</h5>
+          <!--1st column-->
+          <div class="card_flex1 align-items-center justify-content-center">
+            <!--Card_1-->
+            <div class="card_1">
+              <div class="container-fluid gx-0 p-1">
+                <div class="item_img"></div>
+                <div class="item_text d-flex flex-column align-items-center py-3">
+                    <p>Brazillan Tight Curl</p>
+                    <p>from <span>$150.00</span></p>
+                    <a href="./e-commerce-paymentWeb_1/add-pay.html" target="_blank">
+                       <button type="button">SHOP NOW</button>
+                    </a>
+                </div>
+              </div>
+           </div>
+           <!--card_1 End-->
+
+           <!--Card_2-->
+           <div class="card_2">
+            <div class="container-fluid gx-0 p-1">
+              <div class="item_img"></div>
+              <div class="item_text d-flex flex-column align-items-center py-3">
+                  <p>Brazillan Tight Curl</p>
+                  <p>from <span>$150.00</span></p>
+                  <a href="./e-commerce-paymentWeb_2/add-pay.html" target="_blank">
+                     <button type="button">SHOP NOW</button>
+                  </a>
+              </div>
+            </div>
+         </div>
+         <!--card_2 End-->
+
+         <!--Card_3-->
+         <div class="card_3">
+          <div class="container-fluid gx-0 p-1">
+            <div class="item_img"></div>
+            <div class="item_text d-flex flex-column align-items-center py-3">
+                <p>Brazillan Tight Curl</p>
+                <p>from <span>$150.00</span></p>
+                <a href="./e-commerce-paymentWeb_3/add-pay.html" target="_blank">
+                   <button type="button">SHOP NOW</button>
+                </a>
+            </div>
+          </div>
+       </div>
+       <!--card_3 End-->
+
+       <!--Card_4-->
+       <div class="card_4">
+        <div class="container-fluid gx-0 p-1">
+          <div class="item_img"></div>
+          <div class="item_text d-flex flex-column align-items-center py-3">
+              <p>Brazillan Tight Curl</p>
+              <p>from <span>$150.00</span></p>
+              <a href="./e-commerce-paymentWeb_4/add-pay.html" target="_blank">
+                 <button type="button">SHOP NOW</button>
+              </a>
+          </div>
+        </div>
+     </div>
+     <!--card_4 End-->
+          </div>
+
+          <!--1st Column-end-->
+
+      <!-----2nd column------>
+      <div class="card_flex2  align-items-center justify-content-center">
+        <!--Card_1-->
+        <div class="card_5">
+          <div class="container-fluid gx-0 p-1">
+            <div class="item_img"></div>
+            <div class="item_text d-flex flex-column align-items-center py-3">
+                <p>Brazillan Tight Curl</p>
+                <p>from <span>$150.00</span></p>
+                <a href="./e-commerce-paymentWeb_5/add-pay.html" target="_blank">
+                   <button type="button">SHOP NOW</button>
+                </a>
+            </div>
+          </div>
+       </div>
+       <!--card_1 End-->
+
+       <!--Card_2-->
+       <div class="card_6">
+        <div class="container-fluid gx-0 p-1">
+          <div class="item_img"></div>
+          <div class="item_text d-flex flex-column align-items-center py-3">
+              <p>Brazillan Tight Curl</p>
+              <p>from <span>$150.00</span></p>
+              <a href="./e-commerce-paymentWeb_6/add-pay.html" target="_blank">
+                 <button type="button">SHOP NOW</button>
+              </a>
+          </div>
+        </div>
+     </div>
+     <!--card_2 End-->
+
+     <!--Card_3-->
+     <div class="card_7">
+      <div class="container-fluid gx-0 p-1">
+        <div class="item_img"></div>
+        <div class="item_text d-flex flex-column align-items-center py-3">
+            <p>Brazillan Tight Curl</p>
+            <p>from <span>$150.00</span></p>
+            <a href="./e-commerce-paymentWeb_7/add-pay.html" target="_blank">
+               <button type="button">SHOP NOW</button>
+            </a>
+        </div>
+      </div>
+   </div>
+   <!--card_3 End-->
+
+   <!--Card_4-->
+   <div class="card_8">
+    <div class="container-fluid gx-0 p-1">
+      <div class="item_img"></div>
+      <div class="item_text d-flex flex-column align-items-center py-3">
+          <p>Brazillan Tight Curl</p>
+          <p>from <span>$150.00</span></p>
+          <a href="./e-commerce-paymentWeb_8/add-pay.html" target="_blank">
+             <button type="button">SHOP NOW</button>
+          </a>
+      </div>
+    </div>
+ </div>
+ <!--card_4 End-->
+
+ 
+      </div>
+      <button class="banner5_btn" type="button">VIEW ALL</button>
+
+      </div>
+        </div>
+        
+      
+
+      <!--Banner-5 End-->
+
+      <!----Banner-6----->
+  <div class="container-fluid banner-6">
+    <div class="container d-flex align-items-center justify-content-center py-2">
+        <img src="img/fashion_10.png" class="fashion10_img">
+        <div class="banner6_text">
+          <h2>Recommendations<br>for you</h2>
+          <p class="py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates sequi nostrum iste vero maiores incidunt similique recusandae aperiam ratione adipisci. Maiores aliquam explicabo at, ut consequatur numquam dolores quae rerum.</p>
+          <button type="button">SHOIP NOW</button>
+        </div>
+    </div>
+  </div>
+  <!----Banner-6 End-->
+
+  <!---banner7--->
+  <div class="container-fluid banner7">
+    <div class="container d-flex flex-column align-items-center justify-content-center py-5">
+       <h2>Don't Miss Out</h2>
+       <p>LET YOUR HAIR SHINE WITH SPECIAL OFFERS</p>
+       <p>AND DEALS! SUBSCRIBE!</p>
+       <div class="input_box d-flex align-items-center justify-content-center">
+        <input class="px-1 py-1" type="text" placeholder="Email Address">
+        <input type="submit" class="submit py-1">
+       </div>
+    </div>
+  </div>
+  <!--Banner7-End--->
+
+
+  <!----Footer------>
+  
+  <!--Banner8-->
+  <div class="container-fluid banner_8 gx-0">
+    <div class="container banner8_cont py-5 d-flex align-items-center justify-content-center">
+      <!--Menu 1-->
+      <div class="footMn1 menu_1 d-flex flex-column px-5">
+         <h1>OUR</h1>
+         <h4>DE LAS FLORES</h4>
+         <div class="gap_foot py-3"></div>
+         <p>+91 6094567872</p>
+         <a href="#" class="nav-link"><p>lifeshop@gmail.com</p></a>
+      </div>
+
+      <!--Menu_2-->
+      <div class="footMn1 menu_2 d-flex flex-column px-5 ">
+        <h4>INFORMATION</h4>
+        <a href="#" class="nav-link"><p>Home</p></a>
+        <a href="#" class="nav-link"><p>About</p></a>
+        <a href="#" class="nav-link"><p>Shop Now</p></a>
+        <a href="#" class="nav-link"><p>Bundle Deals</p></a>
+        <a href="#" class="nav-link"><p>LookBook</p></a>
+        <a href="#" class="nav-link"><p>Wholesale</p></a>
+        <a href="#" class="nav-link"><p>Reviews</p></a>
+     </div>
+
+
+     <!--Menu_3-->
+
+     <div class="footMn1 menu_3 d-flex flex-column px-5">
+      <h4>SUPPORT</h4>
+      <a href="#" class="nav-link"><p>Contact</p></a>
+      <a href="#" class="nav-link"><p>About</p></a>
+      <a href="#" class="nav-link"><p>Refunds & Returns</p></a>
+      <a href="#" class="nav-link"><p>Deliveries</p></a>
+      
+   </div>
+
+   <!--Menu_4-->
+
+   <div class="footMn1 menu_4 d-flex flex-column px-5">
+    <h4>HELP</h4>
+    <a href="#" class="nav-link"><p>Search</p></a>
+    <a href="#" class="nav-link"><p>Help</p></a>
+    <a href="#" class="nav-link"><p>Information</p></a>
+    <a href="#" class="nav-link"><p>Privacy Policy</p></a>
+    
+ </div>
+ <!--Menu_5-->
+ <div class="footMn1 menu_5 d-flex flex-column px-5">
+  <h4>FOLLOW US</h4>
+  <div class="icons_link d-flex align-items-center justify-content-center">
+    <a href="#" class="nav-link px-1"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></a>
+  <a href="#" class="nav-link px-1"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
+  <a href="#" class="nav-link px-1"><i class="fa-brands fa-linkedin fa-lg" style="color: #ffffff;"></i></a>
+  </div>
+  
+ 
+</div>
+
+         
+    </div>
+    <div class="container-fluid footer gx-0">
+       <div class="container d-flex align-items-center justify-content-center">
+          <p class="text-center py-1 my-2">&copy;2021 <a href="#" ><span>Our Lifeshop</span></a> All Rights Reserved</p>
+          <div class="gap_footer px-5"></div>
+
+          <img src="img/airtel-logo-7.jpg" class="px-1">
+
+          <img src="img/amex.jpeg" class="px-1">
+
+          <img src="img/card.jpeg" class="px-1">
+
+          <img src="img/hdfc.webp" class="px-1">
+
+          <img src="img/rupay.jpg" class="px-1">
+
+
+          <img src="img/visa.jpg" class="px-1">
+
+          
+       </div>
+    </div>
+  </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+      <script src="./javascript.js">
+        
+        
+      </script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

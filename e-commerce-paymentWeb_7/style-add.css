@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav-up {
+  background-color: rgb(241, 48, 154);
+}
+.nav-up .nav-link {
+  color: #fff;
+}
+
+.cont-3 {
+  background-color: #e0e0e0;
+}
+
+.order-img-1 {
+  width: 400px;
+}
+
+.mrp-p span {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(226, 33, 139);
+}
+
+.available {
+  font-weight: 400;
+  color: rgb(4, 182, 4);
+}
+
+.add-btn {
+  width: 140px;
+  height: 40px;
+  border-radius: 0;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(226, 33, 139);
+  border: none;
+  outline: none;
+}
+
+.add-btn:hover {
+  background-color: rgb(136, 7, 78);
+}
+
+.size {
+  color: #525252;
+}
+.size .active {
+  font-weight: 700;
+}
+
+.cash-btn {
+  width: 140px;
+  height: 40px;
+  border-radius: 0;
+  text-align: center;
+  color: rgb(226, 33, 139);
+  background-color: transparent;
+  border: 2px solid rgb(226, 33, 139);
+}
+
+.cash-btn:hover {
+  background-color: rgb(226, 33, 139);
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.quantity button {
+  width: 20px;
+  height: 30px;
+}
+.quantity .qttBox {
+  width: 30px;
+  height: 30px;
+}
+.quantity #inc {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: #444444;
+}
+
+.product-head {
+  font-size: 21px;
+  font-weight: 600;
+  color: #525252;
+}
+
+.product-btns .nav-link {
+  color: #525252;
+}
+
+.product-ul {
+  border-bottom: 0.01em solid #868686;
+}
+
+.readMore-cont img {
+  margin: -3px 3px 0px;
+}
+.readMore-cont button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.readMore-cont button h6 {
+  color: rgb(226, 33, 139);
+}
+
+.more-p {
+  display: none;
+}
+
+/*** Footer ***/
+.banner_8 {
+  height: Auto;
+  background-image: linear-gradient(rgba(235, 30, 143, 0.37), rgba(243, 0, 122, 0.521)), url("img/footer_bg.png");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.banner_8 .footMn1 {
+  color: #fff;
+}
+.banner_8 .footMn1 h1 {
+  color: rgb(252, 3, 210);
+}
+.banner_8 .menu_1 {
+  margin-top: -110px;
+}
+.banner_8 .menu_3 {
+  margin-top: -120px;
+}
+.banner_8 .menu_4 {
+  margin-top: -120px;
+}
+.banner_8 .menu_5 {
+  margin-top: -255px;
+}
+.banner_8 .footer {
+  height: auto;
+  background-color: rgba(3, 3, 3, 0.7137254902);
+  color: #fff;
+}
+.banner_8 .footer span {
+  color: rgb(252, 3, 210);
+}
+.banner_8 .footer img {
+  width: 37px;
+  height: 20px;
+}
+.banner_8 .footer .gap_footer {
+  width: 40%;
+}
+.banner_8 .footer a {
+  text-decoration: none;
+}/*# sourceMappingURL=style-add.css.map */
