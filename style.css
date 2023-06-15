@@ -52,7 +52,8 @@
 .carousel-container .navbar {
   position: fixed;
   z-index: 1000;
-  padding-right: 3%;
+  height: 54px;
+  top: 0px;
 }
 .carousel-container .navbar .nav-link {
   font-size: 13px;
